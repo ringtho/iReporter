@@ -1,0 +1,97 @@
+.form-wrapper{
+    height: 500px;
+    width: 25%;
+    margin: 10px auto;
+}
+
+.signup{
+    display: block;
+    margin-top: 10px 0;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+  
+}
+
+#signup-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    color: darkcyan;
+    font-family: arial, sans-serif;
+}
+
+.signup-input input{
+    margin-top: 20px;
+    height: 45px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.signup-input{
+    margin: 0 auto;
+}
+
+#password{
+    margin-bottom: 5px;
+}
+
+.span-words{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial, sans-serif;
+}
+
+.signup-button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#signup-btn{
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: white;
+    background: darkcyan;
+    padding: 10px;
+    border: 0px solid #827ffe;
+    border-radius: 2px;
+}
+
+#signup-btn:hover{
+    background: #18dbd4;
+    border: 0px solid #403866;
+
+}
+
+.already-member{
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    
+.form-wrapper{
+        width: 80%;
+    }
+   
+}
+
+@media only screen and (max-width: 940px){
+    
+.form-wrapper{
+        width: 50%;
+    }
+    
+    
+   
+}
+
+

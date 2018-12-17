@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/report.css">
+<!--        <link rel="stylesheet" href="interventions.css">-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="user_profile.html">Sringtho</a>
+                    <a href="index.html">LogOut</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <span>iReporter</span>
+                    </div>
+                    <div class="menu">
+                        <label id="label" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="list.html">Submissions</a>
+                            <a href="corruption.html">Red Flags</a>
+                            <a href="interventions.html" style="color: red;">Interventions</a>
+                            <a href="about.html">About Us</a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="report-form">
+                        <div class="left-form" id="report1">
+                            <form class="report">
+                                <p>INTERVENTION DETAILS</p>
+                                <select name="intervention-type">
+                                    <option value="select">--- INTERVENTION TYPE -- </option>
+                                    <option value="private">Roads</option>
+                                    <option value="public">Floods</option>
+                                    <option value="public">Health</option>
+                                    <option value="public">Bridges</option>
+                                    <option value="public">Famine</option>
+                                </select>
+                                <input type="text" id="agency" name="agency" placeholder="*AGENCY NAME">
+                                <select name="corruption-type">
+                                    <option value="select">--- AGENCY TYPE -- </option>
+                                    <option value="private">Private</option>
+                                    <option value="public">Public</option>
+                                </select>
+                                <input type="text" id="location" name="location" placeholder="DISTRICT OF THE AREA">
+                                <input type="text" id="town" name="town" placeholder="*TOWN OF AREA">
+                                <input type="text" id="town" name="parish" placeholder="*PARISH OF THE AREA">
+                            </form>
+                        </div>
+                        <div class="left-form" id="report2">
+                            <form class="report">
+                                <p>MORE DETAILS</p>
+                                <input type="text" id="date" name="date" placeholder="*When did the incident take place?">
+                                <input type="text" id="map" name="map" placeholder="*LATITUDE COORDINATES">
+                                <input type="text" id="map" name="map" placeholder="*LONGITUDE COORDINATES">
+                                <input type="file" id="File">
+                                <span style="font-family: arial, sans-serif;font-size: 18px; text-align: center; color: darkcyan;"><br><br>Have you sought for assistance regarding this issue from any institution and failed?</span>
+                                <select name="corruption-type">
+                                    <option value="select">-- Yes / No -- </option>
+                                    <option value="funds">Yes</option>
+                                    <option value="position">No</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="left-form" id="report3">
+                            <form class="report">
+                            <p>PERSONAL DETAILS</p>
+                                <input type="text" id="name" name="name" placeholder="*FULL NAME">
+                                <input type="text" id="gender" name="gender" placeholder="Gender">
+                                <input type="text" id="mobile" name="mobile" placeholder="Mobile Number">
+                                <input type="text" id="email" name="email"style="margin-bottom: 20px;" placeholder="Email Address">
+                                <span style="font-family: arial, sans-serif;font-size: 18px; text-align: center; color: darkcyan; text-decoration: none; margin-top: 20px;">Incase you already have an account,<br> you can just <a href="login.html">login</a></span>
+                               <button type="submit" id="submit">SUBMIT</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </div>
+        </div>
+    </body>
+</html>

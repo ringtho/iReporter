@@ -1,0 +1,204 @@
+.intervene{
+    width:80%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.description{
+    width: 98%;
+    height: 300px;
+    margin: 10px;
+ 
+}
+
+.description h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.left-one{
+    width: 45%;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.left-one .words span{
+    text-align: center; 
+    font-size: 18px; 
+    font-family: arial, sans-serif; 
+    text-align: justify;
+}
+
+.right-one .words span{
+    text-align: center; 
+    font-size: 18px; 
+    font-family: arial, sans-serif; 
+    text-align: justify; 
+}
+
+.left-one button{
+    background: darkcyan;
+    margin-top: 20px;
+}
+
+.right-one{
+    width: 45%;
+    height: 150px;
+    float: left;
+    padding: 10px;
+}
+
+.right-one button{
+    background: darkcyan;
+    margin-top: 65px;
+}
+
+button:hover{
+    background: #32f2eb;
+}
+
+@media only screen and (max-width: 600px){
+    .intervene{
+        width: 90%;
+    
+    }
+    
+    .description{
+        height: 250px;
+    }
+    
+    .description h3{
+        font-size: 30px;
+    }
+    
+    .left-one span{
+        display: none;
+        
+    }
+    
+    .right-one span{
+        display: none;
+    }
+    
+    .left-one{
+        float: left;
+        width: 40%;
+        margin: 50px 0 0 40px;
+    }
+    
+    .right-one{
+        float: left;
+        width: 40%;
+        margin: 5px 0 0 0;
+    }
+    
+    .main{
+        height:500px;
+        
+    }
+    
+    .footer{
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .intervene{
+        width: 85%;
+    }
+    
+    .description h3{
+        font-size: 35px;
+        
+    }
+    
+    .left-one span{
+        font-size: 14px;
+        display: none;
+    }
+    .right-one span{
+        display: none;
+    }
+    
+    .left-one{
+        width: 40%;
+        margin: 45px 0 0 40px;
+    }
+    .right-one{
+        width: 40%;
+    }
+    .main{
+        height: 550px;
+    }
+}
+
+@media only screen and (min-width: 940px){
+    .intervene{
+        width: 80%;
+    }
+    
+    .description h3{
+        font-size: 40px;
+    }
+    
+    .left-one, .right-one{
+        margin: 30px 0 0 0;
+    }
+    
+    .left-one span{
+        display: block;
+    }
+    
+    .right-one span{
+        display: block;
+    }
+    
+    .right-one button{
+        margin: 60px 0 0 0;
+    }
+    
+    .main{
+        height: 600px;
+    }
+    
+    .footer{
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 967px){
+    .right-one button{
+        margin: 80px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1105px){
+      .intervene{
+        width: 80%;
+    }
+    
+    .description h3{
+        font-size: 40px;
+    }
+    
+    .left-one, .right-one{
+        margin: 30px 0 0 50px;
+    }
+    
+    .left-one span{
+        display: block;
+    }
+    
+    .right-one span{
+        display: block;
+    }
+    
+    .right-one button{
+        margin: 60px 0 0 0;
+    }
+}
+

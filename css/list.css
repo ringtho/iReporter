@@ -1,0 +1,96 @@
+.grid{
+    width: 90%;
+    height: 25%;
+    margin: 10px auto;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.image{
+    width: 20%;
+    height: 90%;
+    float: left;
+    margin: 10px 0 0 10px;
+   
+}
+
+img{
+    width: 98%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.fields{
+    width: 70%;
+    float: left;
+}
+
+table{
+    width: 96%;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+th{
+    color: darkcyan;
+}
+
+.main{
+    height: auto;
+}
+
+.footer{
+    bottom: 0px;
+    margin-top: 30px;
+    position: relative;
+}
+
+#invest{
+    color: blue;
+    font-weight: bold;
+}
+
+#resolve{
+    color: green;
+    font-weight: bold;
+}
+
+#reject{
+    color: red;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: indianred;
+}
+
+td{
+    padding: 0 15px 0 15px;
+}
+
+.stats{
+    width: 90%;
+    height: 25%;
+    margin: 10px auto;
+}
+
+#green{
+    color: green;
+    font-weight: bolder;
+}
+
+#blue{
+    color: blue;
+    font-weight: bolder;
+    
+}
+
+#red{
+    color: red;
+    font-weight: bolder;
+}
