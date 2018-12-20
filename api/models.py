@@ -35,3 +35,27 @@ class Users:
 
         }
 
+class RedFlag:
+    def __init__(self, createdBy, type, location, status, images, videos, comment):
+        self.id = randint(1,9999)
+        self.createdOn = datetime.today()
+        self.createdBy = createdBy
+        self.type = type
+        self.location = location
+        self.status = status
+        self.images = images
+        self.videos = videos
+        self.comment = comment
+
+    def json_format(self):
+        return {
+        "id": self.id,
+        "createdOn": self.createdOn,
+        "createdBy":self.createdBy,
+        "type": self.type,
+        "loctaion": self.location,
+        "status": self.status,
+        "images": self.images,
+        "videos": self.videos,
+        "comment": self.comment
+        }
