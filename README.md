@@ -24,4 +24,3 @@ Corruption is a huge bane to Africa’s development. African countries must deve
 ## Languages used ##
 - HTML
 - CSS
-- Python
