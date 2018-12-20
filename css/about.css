@@ -1,0 +1,45 @@
+.address{
+    width: 40%;
+    margin: 30px auto;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+  
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    p{
+        font-size: 20px;
+        
+    }
+    
+    .address{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .address{
+        width: 60%;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (min-width: 800px){
+    .address{
+        width: 40%;
+        
+    }
+    
+    p{
+        font-size: 30px;
+    }
+}

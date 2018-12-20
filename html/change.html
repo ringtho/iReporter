@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter | Update Details</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/signup.css"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="user_profile.html" style="color: red;">Sringtho</a>
+                    <a href="index.html">LogOut</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <p>iReporter</p>
+                    </div>
+                    <div class="menu">
+                        <label id="label" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="list.html">Submissions</a>
+                            <a href="corruption.html">Red Flags</a>
+                            <a href="interventions.html">Interventions</a>
+                            <a href="about.html">About Us</a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                 <div class="form-wrapper">
+                <form class="signup">
+                    <span id="signup-heading">Change Details</span>
+                    <div class="signup-input">
+                        <input type="text" name="fullname" id="fullname" placeholder="Smith Ringtho" required>
+                        <input type="email" name="username" id="username" placeholder="Sringtho@gmail.com" required>
+                        <input type="password" name="password" id="password" placeholder="********" required >
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="********" required>
+                        <input type="file">
+                    </div>
+                    <div class="span-words">
+                        <span>By clicking SignUp, I agree to the <br><a href="#" style="text-decoration: none; color: darkcyan;">Terms of Use</a> and <a href="#" style="text-decoration: none; color: darkcyan;">Privacy Policy</a>.</span>
+                    </div>
+                    <div class="signup-button">
+                        <button id="signup-btn" onclick="window.location.href='user_profile.html'">Update</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </div>
+        </div>
+    </body>
+</html>
