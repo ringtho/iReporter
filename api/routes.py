@@ -4,6 +4,7 @@ from api.models import Users, RedFlag
 
 app = Flask(__name__)
 
+
 users_list = []
 redflags = []
 
@@ -54,10 +55,10 @@ def add_redflag():
             raise ValueError("createdBy field only takes an integer")
         redflag = RedFlag(data["createdBy"], data["type"], data["location"],
         data["status"], data["images"], data["videos"], data["comment"])
-        redflags.append(redflag)
+        redflags.append(redflag.json_format())
     except ValueError as e:
         print(e)
-        return jsonify({"status": 400, "message": "CreatedBy should be an int"}), 400
+        return jsonify({"status": 400, "Error": "CreatedBy should be an int"}), 400
     return jsonify({"status": 201, "data": [redflag.json_format()]}), 201
 
 @app.route("/api/v101/red-flags", methods=["GET"])
@@ -66,13 +67,33 @@ def get_redflags():
     print(redflags)
 
     for redflag in redflags:
-        redflag_entry.append(redflag.json_format())
+        redflag_entry.append(redflag)
 
     print(redflag_entry)
     if len(redflag_entry) < 1:
         return jsonify({"status": 200, "message":"There are no red flags created"}), 200
     return jsonify({"status": 200, "data": redflag_entry }), 200
 
+@app.route("/api/v101/red-flags/<int:red_flag_id>" ,methods=['DELETE'])
+def delete_redflag(red_flag_id):
+    for redflag in redflags:
+        if redflag['id'] == red_flag_id:
+            redflags.remove(redflag)
+            return jsonify({
+            "status": 200,
+            "data":[{"id": redflag['id'],"message":"red-flag record has been deleted"}]
+            })
+        return jsonify({"Error": "The red flag record doesnt exist"})
+        
+@app.route("/api/v101/red-flags/<int:red_flag_id>/comment", methods=['PATCH'])
+def edit_comment(red_flag_id):
+    for redflag in redflags:
+        if redflag["id"] == red_flag_id:
+            data = request.get_json()
+            redflag['comment']=data["comment"]
+            return jsonify({"status": 200,
+            "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
+        return jsonify ({"Error": "red-flag comment not updated"})
 
 @app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
@@ -87,16 +108,6 @@ def get_single_redflag(red_flag_id):
 
         return jsonify({"status": 200, "data": single_redflag}), 200
 
-@app.route("/api/v101/red-flags/<int:red_flag_id>/comment", methods=['PATCH'])
-def edit_comment(red_flag_id):
-    for redflag in redflags:
-        if redflag["id"] == red_flag_id:
-            data = request.get_json()
-            redflag['comment']=data["comment"]
-            return jsonify({"status": 200,
-            "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
-        return jsonify ({"Error": "red-flag comment not updated"})
-
 @app.route("/api/v101/red-flags/<int:red_flag_id>/location", methods=['PATCH'])
 def edit_location(red_flag_id):
     for redflag in redflags:
@@ -106,16 +117,3 @@ def edit_location(red_flag_id):
             return jsonify({"status":200, "data": [{"id": red_flag_id,
             "message": "Updated red-flag record's location"}]})
         return jsonify({"Error": "red flag location not updated"})
-
-
-@app.route("/api/v101/red-flags/<int:red_flag_id>" ,methods=['DELETE'])
-def delete_redflag(red_flag_id):
-    for redflag in redflags:
-        if redflag['id'] == red_flag_id:
-            redflags.remove(redflag)
-            return jsonify({
-            "status": 200,
-            "data":[{"id": redflag['id'],"message":"red-flag record has been deleted"}]
-            })
-        return jsonify({"Error": "The red flag record doesnt exist"})
-        
