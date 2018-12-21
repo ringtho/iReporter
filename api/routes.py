@@ -1,9 +1,11 @@
 from flask import Flask, jsonify, request, make_response
-from api.models import Users
+from api.models import Users, RedFlag
 
-users_list = []
+
 app = Flask(__name__)
 
+users_list = []
+redflags = []
 
 @app.route("/")
 def hello():
@@ -42,3 +44,31 @@ def get_users():
         return jsonify({"status":200,
         "message": "There are no users created. Thanks"})
     return jsonify({"status": 200, "data": users}), 200
+
+@app.route("/api/v101/red-flags" ,methods=["POST"])
+def add_redflag():
+    data = request.get_json()
+    try:
+        print(data)
+        if type(data["createdBy"]) is not int:
+            raise ValueError("createdBy field only takes an integer")
+        redflag = RedFlag(data["createdBy"], data["type"], data["location"],
+        data["status"], data["images"], data["videos"], data["comment"])
+        redflags.append(redflag)
+    except ValueError as e:
+        print(e)
+        return jsonify({"status": 400, "message": "CreatedBy should be an int"}), 400
+    return jsonify({"status": 201, "data": [redflag.json_format()]}), 201
+
+@app.route("/api/v101/red-flags", methods=["GET"])
+def get_redflags():
+    redflag_entry = []
+    print(redflags)
+
+    for redflag in redflags:
+        redflag_entry.append(redflag.json_format())
+
+    print(redflag_entry)
+    if len(redflag_entry) < 1:
+        return jsonify({"status": 200, "message":"There are no red flags created"}), 200
+    return jsonify({"status": 200, "data": redflag_entry }), 200
