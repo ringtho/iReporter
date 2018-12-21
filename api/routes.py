@@ -73,6 +73,8 @@ def get_redflags():
         return jsonify({"status": 200, "message":"There are no red flags created"}), 200
     return jsonify({"status": 200, "data": redflag_entry }), 200
 
+    
+@app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
     single_redflag = []
     for redflag in redflags:
