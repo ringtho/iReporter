@@ -23,8 +23,8 @@ def create_user():
         print(data)
         if type(data["phoneNumber"]) is not int:
             raise ValueError("phoneNumber  should be integer")
-        user_details = Users(data["firstname"], data["lastname"], data["othernames"],
-        data["email"], data["phoneNumber"],data["username"])
+        user_details = Users(data["firstname"], data["lastname"], othernames = data["othernames"],
+        email = data["email"], phoneNumber =data["phoneNumber"], username =data["username"])
 
         users_list.append(user_details)
     except ValueError as e:
@@ -54,7 +54,7 @@ def add_redflag():
         if type(data["createdBy"]) is not int:
             raise ValueError("createdBy field only takes an integer")
         redflag = RedFlag(data["createdBy"], data["types"], data["location"],
-        data["status"], data["images"], data["videos"], data["comment"])
+        status = data["status"], images = data["images"], videos = data["videos"], comment = data["comment"])
         redflags.append(redflag.json_format())
     except ValueError as e:
         print(e)

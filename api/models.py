@@ -8,15 +8,15 @@ class Users:
     for a user
     """
 
-    def __init__(self, firstname, lastname, othernames, email, phoneNumber, username):
+    def __init__(self, firstname, lastname, email, **kwargs):
 
         self.id = randint(1,9999)
         self.firstname = firstname
         self.lastname = lastname
-        self.othernames = othernames
+        self.othernames = kwargs['othernames']
         self.email = email
-        self.phoneNumber = phoneNumber
-        self.username = username
+        self.phoneNumber = kwargs['phoneNumber']
+        self.username = kwargs['username']
         self.registered = datetime.today()
         self.isAdmin = False
 
@@ -36,16 +36,16 @@ class Users:
         }
 
 class RedFlag:
-    def __init__(self, createdBy, types, location, status, images, videos, comment):
+    def __init__(self, createdBy, types, location,**kwargs):
         self.id = randint(1,9999)
         self.createdOn = datetime.today()
         self.createdBy = createdBy
-        self.type = types
+        self.types = types
         self.location = location
-        self.status = status
-        self.images = images
-        self.videos = videos
-        self.comment = comment
+        self.status = kwargs['status']
+        self.images = kwargs['images']
+        self.videos = kwargs['videos']
+        self.comment = kwargs['comment']
 
     def json_format(self):
         return {
