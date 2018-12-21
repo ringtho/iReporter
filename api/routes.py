@@ -28,3 +28,17 @@ def create_user():
         print(e)
         return jsonify({"status": 400, "message":"phoneNumber should be an integer"}), 400
     return jsonify({"status":201, "data": [user_details.json_format()]}),201
+
+@app.route("/api/v101/users", methods=["GET"])
+def get_users():
+    users = []
+    print(users_list)
+
+    for user in users_list:
+        users.append(user.json_format())
+
+    print(users)
+    if len(users) < 1:
+        return jsonify({"status":200,
+        "message": "There are no users created. Thanks"})
+    return jsonify({"status": 200, "data": users}), 200
