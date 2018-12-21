@@ -73,7 +73,7 @@ def get_redflags():
         return jsonify({"status": 200, "message":"There are no red flags created"}), 200
     return jsonify({"status": 200, "data": redflag_entry }), 200
 
-    
+
 @app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
     single_redflag = []
@@ -86,3 +86,13 @@ def get_single_redflag(red_flag_id):
             return jsonify({"status": 200, "Error": "There are no redflags in the database"})
 
         return jsonify({"status": 200, "data": single_redflag}), 200
+
+@app.route("/api/v101/red-flags/<int:red_flag_id>/comment", methods=['PATCH'])
+def edit_comment(red_flag_id):
+    for redflag in redflags:
+        if redflag["id"] == red_flag_id:
+            data = request.get_json()
+            redflag['comment']=data["comment"]
+            return jsonify({"status": 200,
+            "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
+        return jsonify ({"Error": "red-flag comment not updated"})
