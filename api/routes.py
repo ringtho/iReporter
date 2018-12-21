@@ -53,7 +53,7 @@ def add_redflag():
         print(data)
         if type(data["createdBy"]) is not int:
             raise ValueError("createdBy field only takes an integer")
-        redflag = RedFlag(data["createdBy"], data["type"], data["location"],
+        redflag = RedFlag(data["createdBy"], data["types"], data["location"],
         data["status"], data["images"], data["videos"], data["comment"])
         redflags.append(redflag.json_format())
     except ValueError as e:
