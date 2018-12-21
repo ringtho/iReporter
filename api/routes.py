@@ -106,3 +106,16 @@ def edit_location(red_flag_id):
             return jsonify({"status":200, "data": [{"id": red_flag_id,
             "message": "Updated red-flag record's location"}]})
         return jsonify({"Error": "red flag location not updated"})
+
+
+@app.route("/api/v101/red-flags/<int:red_flag_id>" ,methods=['DELETE'])
+def delete_redflag(red_flag_id):
+    for redflag in redflags:
+        if redflag['id'] == red_flag_id:
+            redflags.remove(redflag)
+            return jsonify({
+            "status": 200,
+            "data":[{"id": redflag['id'],"message":"red-flag record has been deleted"}]
+            })
+        return jsonify({"Error": "The red flag record doesnt exist"})
+        
