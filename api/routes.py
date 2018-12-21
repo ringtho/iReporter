@@ -85,16 +85,6 @@ def delete_redflag(red_flag_id):
             })
         return jsonify({"Error": "The red flag record doesnt exist"})
         
-@app.route("/api/v101/red-flags/<int:red_flag_id>/comment", methods=['PATCH'])
-def edit_comment(red_flag_id):
-    for redflag in redflags:
-        if redflag["id"] == red_flag_id:
-            data = request.get_json()
-            redflag['comment']=data["comment"]
-            return jsonify({"status": 200,
-            "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
-        return jsonify ({"Error": "red-flag comment not updated"})
-
 @app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
     single_redflag = []
@@ -108,12 +98,18 @@ def get_single_redflag(red_flag_id):
 
         return jsonify({"status": 200, "data": single_redflag}), 200
 
-@app.route("/api/v101/red-flags/<int:red_flag_id>/location", methods=['PATCH'])
-def edit_location(red_flag_id):
+@app.route("/api/v101/red-flags/<int:red_flag_id>/<string:query>", methods=['PATCH'])
+def edit_location(red_flag_id, query):
     for redflag in redflags:
         if redflag["id"] == red_flag_id:
             data = request.get_json()
-            redflag["location"] = data["location"]
-            return jsonify({"status":200, "data": [{"id": red_flag_id,
-            "message": "Updated red-flag record's location"}]})
+            if query == "location":
+                redflag["location"] = data["location"]
+                return jsonify({"status":200, "data": [{"id": red_flag_id,
+                "message": "Updated red-flag record's location"}]})
+            elif query == "comment":
+                redflag['comment']=data["comment"]
+                return jsonify({"status": 200,
+                   "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
+
         return jsonify({"Error": "red flag location not updated"})
