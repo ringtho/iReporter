@@ -53,7 +53,7 @@ def add_redflag():
         print(data)
         if type(data["createdBy"]) is not int:
             raise ValueError("createdBy field only takes an integer")
-        redflag = RedFlag(data["createdBy"], data["types"], data["location"],
+        redflag = RedFlag(data["createdBy"], data["types"], location = data["location"],
         status = data["status"], images = data["images"], videos = data["videos"], comment = data["comment"])
         redflags.append(redflag.json_format())
     except ValueError as e:
@@ -104,13 +104,22 @@ def edit_location(red_flag_id, query):
     for redflag in redflags:
         if redflag["id"] == red_flag_id:
             data = request.get_json()
-            if query == "location":
-                redflag["location"] = data["location"]
+            if (query == "location") or (query == "comment"):
+                redflag[query] = data[query]
+                print(redflag[query])
                 return jsonify({"status":200, "data": [{"id": red_flag_id,
-                "message": "Updated red-flag record's location"}]})
-            elif query == "comment":
-                redflag['comment']=data["comment"]
-                return jsonify({"status": 200,
-                   "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
+                "message": "Updated red-flag record's " + query }]})
+            # elif query == "comment":
+            #     redflag['comment']=data["comment"]
+            #     return jsonify({"status": 200,
+            #        "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
 
-        return jsonify({"Error": "red flag location not updated"})
+            # return jsonify({"Error": "red flag location not updated"})
+
+# def edit_parameters(query, entry, message):
+#     if query == entry:
+#         redflag[entry] = data[entry]
+#         return jsonify({"status": 200,
+#         "data": [{ "id": red_flag_id, "message": message}] })
+
+

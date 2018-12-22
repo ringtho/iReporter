@@ -36,12 +36,12 @@ class Users:
         }
 
 class RedFlag:
-    def __init__(self, createdBy, types, location,**kwargs):
+    def __init__(self, createdBy, types,**kwargs):
         self.id = randint(1,9999)
         self.createdOn = datetime.today()
         self.createdBy = createdBy
         self.types = types
-        self.location = location
+        self.location = kwargs['location']
         self.status = kwargs['status']
         self.images = kwargs['images']
         self.videos = kwargs['videos']
@@ -53,7 +53,7 @@ class RedFlag:
         "createdOn": self.createdOn,
         "createdBy":self.createdBy,
         "type": self.types,
-        "loctaion": self.location,
+        "location": self.location,
         "status": self.status,
         "images": self.images,
         "videos": self.videos,
