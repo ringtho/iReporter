@@ -26,3 +26,14 @@ class TestRedFlags(unittest.TestCase):
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 200)
         self.assertIn("no users", data["message"])
+
+    def test_redflag_empty(self):
+        reply = self.test_client.get("/api/v101/red-flags")
+        data = json.loads(reply.data)
+        self.assertEqual(reply.status_code, 200)
+        self.assertIn("There are no red flags created", data["message"])
+
+
+
+if __name__ == '__main__':
+    unittest.main()
