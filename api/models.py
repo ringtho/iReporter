@@ -48,7 +48,7 @@ class RedFlag:
         self.comment = kwargs['comment']
 
     def json_format(self):
-        return {
+        format = {
         "id": self.id,
         "createdOn": self.createdOn,
         "createdBy":self.createdBy,
@@ -59,3 +59,4 @@ class RedFlag:
         "videos": self.videos,
         "comment": self.comment
         }
+        return format

@@ -59,7 +59,8 @@ def add_redflag():
     except ValueError as e:
         print(e)
         return jsonify({"status": 400, "Error": "CreatedBy should be an int"}), 400
-    return jsonify({"status": 201, "data": [redflag.json_format()]}), 201
+    return jsonify({"status": 201, "data": [{ "id": redflags[0]["id"],
+    "message": "red flag record created."}]}), 201
 
 @app.route("/api/v101/red-flags", methods=["GET"])
 def get_redflags():
