@@ -52,7 +52,7 @@ class RedFlag:
         "id": self.id,
         "createdOn": self.createdOn,
         "createdBy":self.createdBy,
-        "type": self.types,
+        "types": self.types,
         "location": self.location,
         "status": self.status,
         "images": self.images,
