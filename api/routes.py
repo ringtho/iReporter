@@ -86,7 +86,7 @@ def delete_redflag(red_flag_id):
             })
         return jsonify({"Error": "The red flag record doesnt exist"})
         
-@app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
+@app.route("/api/v101/red-flags/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
     single_redflag = []
     for redflag in redflags:
