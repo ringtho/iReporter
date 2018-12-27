@@ -54,7 +54,8 @@ def add_redflag():
         if type(data["createdBy"]) is not int:
             raise ValueError("createdBy field only takes an integer")
         redflag = RedFlag(data["createdBy"], data["types"], location = data["location"],
-        status = data["status"], images = data["images"], videos = data["videos"], comment = data["comment"])
+        status = data["status"], images = data["images"], videos = data["videos"], 
+        id = data["id"],comment = data["comment"])
         redflags.append(redflag.json_format())
     except ValueError as e:
         print(e)
@@ -86,7 +87,7 @@ def delete_redflag(red_flag_id):
             })
         return jsonify({"Error": "The red flag record doesnt exist"})
         
-@app.route("/api/v101/red-flag/<int:red_flag_id>", methods=["GET"])
+@app.route("/api/v101/red-flags/<int:red_flag_id>", methods=["GET"])
 def get_single_redflag(red_flag_id):
     single_redflag = []
     for redflag in redflags:
