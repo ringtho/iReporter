@@ -37,7 +37,7 @@ class Users:
 
 class RedFlag:
     def __init__(self, createdBy, types,**kwargs):
-        self.id = randint(1,9999)
+        self.id = kwargs['id']
         self.createdOn = datetime.today()
         self.createdBy = createdBy
         self.types = types
