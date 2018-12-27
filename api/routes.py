@@ -110,17 +110,4 @@ def edit_location(red_flag_id, query):
                 print(redflag[query])
                 return jsonify({"status":200, "data": [{"id": red_flag_id,
                 "message": "Updated red-flag record's " + query }]})
-            # elif query == "comment":
-            #     redflag['comment']=data["comment"]
-            #     return jsonify({"status": 200,
-            #        "data": [{"id":red_flag_id, "message": "Updated red-flag record's comment"}]})
-
-            # return jsonify({"Error": "red flag location not updated"})
-
-# def edit_parameters(query, entry, message):
-#     if query == entry:
-#         redflag[entry] = data[entry]
-#         return jsonify({"status": 200,
-#         "data": [{ "id": red_flag_id, "message": message}] })
-
-
+           

@@ -7,7 +7,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python -m pytest 
+  - nosetests --with-coverage
+  - coverage report
 
 after success:
   - coveralls
