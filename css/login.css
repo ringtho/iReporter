@@ -15,6 +15,20 @@
     
 }
 
+.new {
+    padding: 15px 0 0 0;
+}
+
+.new a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+.new a:hover{
+    color: turquoise;
+}
+
 .login-form span{
     font-family: arial, sans-serif;
 }
