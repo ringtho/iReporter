@@ -104,6 +104,27 @@
     margin-top: -1px;
 }
 
+.logo1{
+    height: 70px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid darkcyan;
+    margin: 0 0 20px 0;
+    
+}
+
+.logo1 p{
+    font-size: 40px;
+    color: indianred;
+}
+
+.logo1 span{
+    line-height: 80px;
+    font-size: 40px;
+    color: indianred;
+}
+
 @media only screen and (max-width: 600px){
     
     #toggle:checked + .form-wrapper{
