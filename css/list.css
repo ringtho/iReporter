@@ -75,8 +75,13 @@ td{
 
 .stats{
     width: 90%;
-    height: 25%;
-    margin: 10px auto;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.wrap-grid{
+    height: 100%;
+    margin-top: 50px;
 }
 
 #green{
@@ -85,13 +90,13 @@ td{
 }
 
 #blue{
-    color: blue;
+    color: darkcyan;
     font-weight: bolder;
     
 }
 
 #red{
-    color: red;
+    color: indianred;
     font-weight: bolder;
 }
 
@@ -123,4 +128,36 @@ button{
 #btn2:hover{
     background: #ff6666;
     border: none;
+}
+
+.rej{
+    height: 100%;
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+}
+
+.in{
+    width: 100%;
+    height: 50%;
+
+}
+
+.in2{
+    width: 100%;
+    height: 50%;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    background:#f5f5ef;
+}
+
+.in p{
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.in2 p{
+    font-size: 28px;
+    text-align: center;
 }
