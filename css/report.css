@@ -95,6 +95,14 @@ textarea{
     margin-bottom: 10px;
 }
 
+#pic{
+    width: 94%;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 190px;
+    background: blue;
+}
+
 #submit{
     width: 83%;
     margin: 30px;

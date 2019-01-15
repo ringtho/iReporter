@@ -3,9 +3,7 @@
     <head>
         <title>iReporter</title>
         <link rel="stylesheet" href="../css/template.css">
-        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/report.css">
-<!--        <link rel="stylesheet" href="interventions.css">-->
         <meta charset="utf-8">
         <meta name="viewport" content="width-device, initial-scale=1.0">
     </head>
@@ -14,7 +12,7 @@
             <div class="header">
                 <div class="top-bar">
                     <a href="user_profile.html">Sringtho</a>
-                    <a href="index.html">LogOut</a>
+                    <a href="corruption.html">LogOut</a>
                 </div>
                 <div class="nav-bar">
                     <div class="logo">
@@ -25,8 +23,8 @@
                         <input type="checkbox" id="toggle"/>
                         <div class="links">
                             <a href="index.html">Home</a>
-                            <a href="list.html">Submissions</a>
-                            <a href="corruption.html" style="color: red;">Red Flags</a>
+                            <a href="corruption.html" style="color: red;">Incidents</a>
+                            <a href="list.html">RedFlags</a>
                             <a href="interventions.html">Interventions</a>
                             <a href="about.html">About Us</a>
                            
@@ -35,57 +33,48 @@
                 </div>
             </div>
             <div class="main">
-                <div class="report-form">
+                 <div class="report-form">
                         <div class="left-form">
                             <form class="report">
                                 <p>AGENCY DETAILS</p>
                                 <select name="corruption-type">
-                                    <option value="select">--- AGENCY TYPE -- </option>
-                                    <option value="private">Private</option>
-                                    <option value="public" selected>Public</option>
+                                    <option value="select">--- Incident Type -- </option>
+                                    <option value="private" selected>Red Flag</option>
+                                    <option value="public">Intervention</option>
                                 </select>
-                                <input type="text" id="agency" name="agency" placeholder="Ministry of Health">
-                                <input type="text" id="name" name="name" placeholder="Moses Kawuma">
-                                <input type="text" id="position" name="position" placeholder="COO">
-                                <input type="text" id="location" name="location" placeholder="Kampala">
-                                <input type="text" id="town" name="town" placeholder="Kampala">
-                                <select name="corruption-type">
-                                    <option value="select">-- select Abuse Type -- </option>
-                                    <option value="funds">Abuse of funds</option>
-                                    <option value="position" selected>Abuse of position</option>
-                                    <option value="assets">Abuse of assets</option>
-                                </select>
+                                <input type="text" id="agency" name="agency" placeholder="*AGENCY OF OFFICIAL" value="Ministry of Lands">
+                                <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL" value="Moses Kawuma">
+                                <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible.">He transferred funds meant for fixing potholes on the Ntinda road and built himself a mansion</textarea>
+                                <input type="file" id="File" placeholder="Picture of Incident" value="../img/road.jpg">
+                                                               
                             </form>
                         </div>
-                        <div class="left-form">
+                        <div class="right-form">
                             <form class="report">
-                                <p>MORE DETAILS</p>
-                                <input type="text" id="date" name="date" placeholder="23rd December 2017">
-                                <input type="text" id="map" name="map" placeholder="41°24'12.2″N 2°10'26.5″E.">
-                                <input type="text" id="map" name="map" placeholder="41°24'12.2″N 2°10'26.5″E.">
-                                <input type="file">
-                                <span style="font-family: arial, sans-serif;font-size: 18px; text-align: center; color: darkcyan;"><br><br>Have you reported this incident to anyone?</span>
-                                <select name="corruption-type">
-                                    <option value="select">-- Yes / No -- </option>
-                                    <option value="funds" selected>Yes</option>
-                                    <option value="position">No</option>
-                                </select>
+                                <p>MAP</p>
+                                <div class="map" id="googleMap">
+                                </div>
                             </form>
                         </div>
-                        <div class="left-form">
+                        <div class="other">
                             <form class="report">
-                            <p>DOCUMENTS</p>
-                                <textarea type="text" id="upload" name="upload" placeholder="*Do you have any documents to support your claim?. If so provide us with a link to the documents."></textarea>
-                                <p id="status">Status: Yet to be marked</p>
-                                <button type="submit" id="submit">EDIT</button>
-                                <button type="submit" id="submit" style="background: red; margin-top: -20px;">DELETE</button>
+                                <p>Location Coordinates</p>
+                                <div class="latlng">
+                                    <div id="late" >0.32850</div>
+                                    <div id="long">32.59187</div>
+                                    <div id="pic"><img src="../img/pothhole.png" style="height: 100%; width: 100%; border-radius: 3px;"></div>
+                                    <button type="submit" id="submit">SUBMIT</button>
+                                </div>
                             </form>
                         </div>
-                      </div>
+                    </div>
             </div>
             <div class="footer">
                 <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
             </div>
         </div>
+        <script type="text/javascript" src="/script/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
+    
     </body>
 </html>
