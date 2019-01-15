@@ -3,9 +3,7 @@
     <head>
         <title>iReporter</title>
         <link rel="stylesheet" href="../css/template.css">
-<!--        <link rel="stylesheet" href="../css/main.css">-->
         <link rel="stylesheet" href="../css/report.css">
-<!--        <link rel="stylesheet" href="interventions.css">-->
         <meta charset="utf-8">
         <meta name="viewport" content="width-device, initial-scale=1.0">
     </head>
@@ -40,14 +38,21 @@
                             <form class="report">
                                 <p>AGENCY DETAILS</p>
                                 <select name="corruption-type">
-                                    <option value="select">--- Incident Type -- </option>
+                                    <option value="select">--- Incident Option -- </option>
                                     <option value="private">Red Flag</option>
                                     <option value="public">Intervention</option>
+                                </select>
+                                 <select name="corruption-type">
+                                    <option value="select">--- Incident Type -- </option>
+                                    <option value="private">Famine</option>
+                                    <option value="public">Floods</option>
+                                    <option value="public">Diseases</option>
+                                    <option value="public">Corruption</option>
                                 </select>
                                 <input type="text" id="agency" name="agency" placeholder="*AGENCY NAME">
                                 <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL">
                                 <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible."></textarea>
-                                <input type="file" id="File" placeholder="Picture of Incident">
+                                
                                                                
                             </form>
                         </div>
@@ -64,6 +69,7 @@
                                 <div class="latlng">
                                     <div id="late" >LATITUDE</div>
                                     <div id="long">LONGITUDE</div>
+                                    <input type="file" id="File" placeholder="Picture of Incident">
                                     <button type="submit" id="submit">SUBMIT</button>
                                 </div>
                             </form>
