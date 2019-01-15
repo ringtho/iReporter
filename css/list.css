@@ -94,3 +94,23 @@ td{
     color: red;
     font-weight: bolder;
 }
+
+button{
+    width: 100px;
+    height: 30px;
+}
+
+#btn1{
+    margin-bottom: 10px;
+    background: #4da6ff;
+    color: white;
+    border: 1px solid #4da6ff;
+    border-radius: 2px;
+}
+
+#btn2{
+    background: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 2px;
+}
