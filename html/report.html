@@ -40,51 +40,45 @@
                             <form class="report">
                                 <p>AGENCY DETAILS</p>
                                 <select name="corruption-type">
-                                    <option value="select">--- AGENCY TYPE -- </option>
-                                    <option value="private">Private</option>
-                                    <option value="public">Public</option>
+                                    <option value="select">--- Incident Type -- </option>
+                                    <option value="private">Red Flag</option>
+                                    <option value="public">Intervention</option>
                                 </select>
                                 <input type="text" id="agency" name="agency" placeholder="*AGENCY NAME">
                                 <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL">
-                                <input type="text" id="position" name="position" placeholder="*POSITION HELD">
-                                <input type="text" id="location" name="location" placeholder="DISTRICT OF INCIDENT">
-                                <input type="text" id="town" name="town" placeholder="*TOWN OF INCIDENT">
-                                <select name="corruption-type">
-                                    <option value="select">-- select Abuse Type -- </option>
-                                    <option value="funds">Abuse of funds</option>
-                                    <option value="position">Abuse of position</option>
-                                    <option value="assets">Abuse of assets</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="left-form">
-                            <form class="report">
-                                <p>MORE DETAILS</p>
-                                <input type="text" id="date" name="date" placeholder="*When did the incident take place?">
                                 <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible."></textarea>
-                                <span style="font-family: arial, sans-serif;font-size: 18px; text-align: center; color: darkcyan;"><br><br>Have you reported this incident to anyone?</span>
-                                <select name="corruption-type">
-                                    <option value="select">-- Yes / No -- </option>
-                                    <option value="funds">Yes</option>
-                                    <option value="position">No</option>
-                                </select>
+                                <input type="text" id="date" name="date" placeholder="*When did the incident take place?">
+                                <input type="file" id="File">
                                 
                             </form>
                         </div>
-                        <div class="left-form">
+                        <div class="right-form">
                             <form class="report">
-                            <p>DOCUMENTS</p>
-                                <input type="text" id="map" name="map" placeholder="*LATITUDE COORDINATES">
-                                <input type="text" id="map" name="map" placeholder="*LONGITUDE COORDINATES">
-                                <input type="file" id="File">
-                                <button type="submit" id="submit">SUBMIT</button>
+                                <p>Location Coordinates</p>
+                                <div class="map" id="googleMap">
+                                   
+                                </div>
+                                 <button type="submit" id="submit">SUBMIT</button>
+                                                               
                             </form>
                         </div>
-                      </div>
+                  
+                    </div>
             </div>
             <div class="footer">
                 <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
             </div>
         </div>
+        <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
+    
     </body>
 </html>
