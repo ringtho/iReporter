@@ -80,8 +80,19 @@ textarea{
 }
 
 #late, #long{
-    width: 85%;
+    width: 90%;
+    border: 2px solid darkcyan;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    color:gray;
 
+}
+#late{
+    margin-bottom: 10px;
 }
 
 #submit{

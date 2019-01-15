@@ -47,8 +47,7 @@
                                 <input type="text" id="agency" name="agency" placeholder="*AGENCY NAME">
                                 <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL">
                                 <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible."></textarea>
-                                <input type="text" id="date" name="date" placeholder="*When did the incident take place?">
-                                <input type="file" id="File">
+                                <input type="file" id="File" placeholder="Picture of Incident">
                                                                
                             </form>
                         </div>
@@ -63,8 +62,8 @@
                             <form class="report">
                                 <p>Location Coordinates</p>
                                 <div class="latlng">
-                                    <input type="text" id="late" placeholder="Latitude">
-                                    <input type="text" id="long" placeholder="Longitude">
+                                    <div id="late" >LATITUDE</div>
+                                    <div id="long">LONGITUDE</div>
                                     <button type="submit" id="submit">SUBMIT</button>
                                 </div>
                             </form>
@@ -77,8 +76,8 @@
         </div>
         <script>
         function myMap() {
-            var latitude = 27.7172453; // YOUR LATITUDE VALUE
-            var longitude = 85.3239605; // YOUR LONGITUDE VALUE
+            var latitude = 	0.32850; // YOUR LATITUDE VALUE
+            var longitude = 32.59187; // YOUR LONGITUDE VALUE
 
             var myLatLng = {lat: latitude, lng: longitude};
 
@@ -88,6 +87,8 @@
               disableDoubleClickZoom: true
             });
             
+            
+            
             var marker = new google.maps.Marker({
               position: myLatLng,
               map: map,
@@ -96,7 +97,21 @@
               // setting latitude & longitude as title of the marker
               // title is shown when you hover over the marker
               title: latitude + ', ' + longitude 
-            });      
+            });
+            
+                     
+            // Update lat/long value of div when the marker is clicked
+            marker.addListener('click', function(event) {              
+              document.getElementById('late').innerHTML = event.latLng.lat();
+              document.getElementById('long').innerHTML =  event.latLng.lng();
+            });
+            
+            // Update lat/long value of div when anywhere in the map is clicked 
+            google.maps.event.addListener(map,'click',function(event) {                
+                document.getElementById('late').innerHTML = event.latLng.lat();
+                document.getElementById('long').innerHTML =  event.latLng.lng();
+            });
+      
         }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
