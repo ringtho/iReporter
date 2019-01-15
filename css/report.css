@@ -2,6 +2,7 @@
     width: 98%;
     height: 90%;
     padding: 10px;
+    overflow-y: 0;
   
 }
 
@@ -22,9 +23,16 @@
 
 .right-form{
     height: 98%;
-    width: 68%;
+    width: 45%;
     float: left;
 
+}
+
+.other{
+    height: 98%;
+    width: 25%;
+    float: left;
+    
 }
 
 .report{
@@ -71,11 +79,17 @@ textarea{
     margin-left: 30px;
 }
 
+#late, #long{
+    width: 85%;
+
+}
+
 #submit{
     width: 83%;
     margin: 30px;
     background-color: darkcyan;
 }
+
 
 #submit:hover{
     background: #32f2eb;
@@ -102,6 +116,7 @@ textarea{
     
     .main{
         height: auto;
+        
     }
     
     .footer{

@@ -49,17 +49,24 @@
                                 <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible."></textarea>
                                 <input type="text" id="date" name="date" placeholder="*When did the incident take place?">
                                 <input type="file" id="File">
-                                
+                                                               
                             </form>
                         </div>
                         <div class="right-form">
                             <form class="report">
-                                <p>Location Coordinates</p>
+                                <p>MAP</p>
                                 <div class="map" id="googleMap">
-                                   
                                 </div>
-                                 <button type="submit" id="submit">SUBMIT</button>
-                                                               
+                            </form>
+                        </div>
+                        <div class="other">
+                            <form class="report">
+                                <p>Location Coordinates</p>
+                                <div class="latlng">
+                                    <input type="text" id="late" placeholder="Latitude">
+                                    <input type="text" id="long" placeholder="Longitude">
+                                    <button type="submit" id="submit">SUBMIT</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -70,29 +77,26 @@
         </div>
         <script>
         function myMap() {
-//        var mapProp= {
-//          center:new google.maps.LatLng(51.508742,-0.120850),
-//          zoom:5,
-//        };
-//        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        var latitude = 27.7172453; // YOUR LATITUDE VALUE
-        var longitude = 85.3239605; // YOUR LONGITUDE VALUE
+            var latitude = 27.7172453; // YOUR LATITUDE VALUE
+            var longitude = 85.3239605; // YOUR LONGITUDE VALUE
 
-        var myLatLng = {lat: latitude, lng: longitude};
+            var myLatLng = {lat: latitude, lng: longitude};
 
-        map = new google.maps.Map(document.getElementById('googleMap'), {
-          center: myLatLng,
-          zoom: 10                    
-        });
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          //title: 'Hello World'
+            map = new google.maps.Map(document.getElementById('googleMap'), {
+              center: myLatLng,
+              zoom: 10,
+              disableDoubleClickZoom: true
+            });
+            
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              //title: 'Hello World'
 
-          // setting latitude & longitude as title of the marker
-          // title is shown when you hover over the marker
-          title: latitude + ', ' + longitude 
-        });      
+              // setting latitude & longitude as title of the marker
+              // title is shown when you hover over the marker
+              title: latitude + ', ' + longitude 
+            });      
         }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
