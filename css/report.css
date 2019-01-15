@@ -109,6 +109,18 @@ textarea{
     }
 }
 
+#submit{
+    margin:10px;
+    text-align: center;
+    width: 94%;
+    height: 40px;
+    margin-left: 25px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    
+}
+
 
 
 @media only screen and (min-width: 600px){

@@ -3,7 +3,7 @@
     <head>
         <title>iReporter</title>
         <link rel="stylesheet" href="../css/template.css">
-        <link rel="stylesheet" href="../css/main.css">
+<!--        <link rel="stylesheet" href="../css/main.css">-->
         <link rel="stylesheet" href="../css/report.css">
 <!--        <link rel="stylesheet" href="interventions.css">-->
         <meta charset="utf-8">
@@ -25,8 +25,8 @@
                         <input type="checkbox" id="toggle"/>
                         <div class="links">
                             <a href="index.html">Home</a>
-                            <a href="list.html">Submissions</a>
-                            <a href="corruption.html" style="color: red;">Red Flags</a>
+                            <a href="corruption.html" style="color: red;">Incidents</a>
+                            <a href="list.html">RedFlags</a>
                             <a href="interventions.html">Interventions</a>
                             <a href="about.html">About Us</a>
                            
@@ -62,7 +62,6 @@
                                                                
                             </form>
                         </div>
-                  
                     </div>
             </div>
             <div class="footer">
@@ -71,11 +70,29 @@
         </div>
         <script>
         function myMap() {
-        var mapProp= {
-          center:new google.maps.LatLng(51.508742,-0.120850),
-          zoom:5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+//        var mapProp= {
+//          center:new google.maps.LatLng(51.508742,-0.120850),
+//          zoom:5,
+//        };
+//        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var latitude = 27.7172453; // YOUR LATITUDE VALUE
+        var longitude = 85.3239605; // YOUR LONGITUDE VALUE
+
+        var myLatLng = {lat: latitude, lng: longitude};
+
+        map = new google.maps.Map(document.getElementById('googleMap'), {
+          center: myLatLng,
+          zoom: 10                    
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          //title: 'Hello World'
+
+          // setting latitude & longitude as title of the marker
+          // title is shown when you hover over the marker
+          title: latitude + ', ' + longitude 
+        });      
         }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
