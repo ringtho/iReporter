@@ -12,7 +12,7 @@
             <div class="header">
                 <div class="top-bar">
                     <a href="user_profile.html">Sringtho</a>
-                    <a href="index.html">LogOut</a>
+                    <a href="login.html">LogOut</a>
                 </div>
                 <div class="nav-bar">
                     <div class="logo">
@@ -23,9 +23,9 @@
                         <input type="checkbox" id="toggle"/>
                         <div class="links">
                             <a href="index.html">Home</a>
-                            <a href="list.html" style="color: red;">Submissions</a>
-                            <a href="corruption.html">Red Flags</a>
-                            <a href="interventions.html">Interventions</a>
+                            <a href="report.html">Report Incident</a>
+                            <a href="list.html" style="color: red;">Red Flags</a>
+                            <a href="intervention_lists.html">Interventions</a>
                             <a href="about.html">About Us</a>
                    
                            
@@ -35,22 +35,43 @@
             </div>
             <div class="main">
                 <h1>Red Flags</h1>
-                   <div class="stats">
-                        <table>
-                            <tr>
-                                <th id="green">Resolved</th>
-                                <th id="blue">Under Investigation</th>
-                                <th id="red">Rejected</th>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>30</td>
-                                <td>20</td>
-                            </tr>
-                            
-                        </table>
+                <div class="stats">
+                    <div class="rej">
+                        <div class="in">
+                            <p id="blue">Under Investigation</p>
+                        </div>
+                        <div class="in2">
+                            <p>2 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="green">Resolved</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="red">Rejected</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="gray">Drafts</p>
+                        </div>
+                        <div class="in2">
+                            <p>3 / 7</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="grid">
+                <div class="wrap-grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/road.jpg" alt="corruption">
                     </div>
@@ -59,26 +80,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
                                 <td id="invest">Under Investigation</td>
+                                <td>
+                                    <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/pothhole.png" alt="corruption">
                     </div>
@@ -87,26 +109,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="invest">Under Investigation</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="draft">Draft</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/road.jpg" alt="corruption">
                     </div>
@@ -115,26 +138,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
                                 <td id="resolve">Resolved</td>
+                                <td>
+                                    <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/road.jpg" alt="corruption">
                     </div>
@@ -143,26 +167,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td >Longitude</td>
-                                <td id="resolve">Resolved</td>
+                                <td>0.32850</td>
+                                <td >32.59187</td>
+                                <td id="draft">Draft</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/road.jpg" alt="corruption">
                     </div>
@@ -171,26 +196,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
                                 <td id="reject">Rejected</td>
+                                <td>
+                                    <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/pothhole.png" alt="corruption">
                     </div>
@@ -199,26 +225,27 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="reject">Rejected</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="invest">Under Investigation</td>
+                                <td>
+                                   <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
                 </div>
-                 <div class="grid">
+                    <div class="grid">
                     <div class="image">
                         <img src="../img/road.jpg" alt="corruption">
                     </div>
@@ -227,24 +254,26 @@
                             <tr>
                                 <th>Agency</th>
                                 <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
                                 <th>Latitude</th>
                                 <th>Longitude</th>
                                 <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             <tr>
                                 <td>Ministry of Health</td>
                                 <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="invest">Under Investigation</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="draft">Draft</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
                                 
                             </tr>
                         </table>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="footer">

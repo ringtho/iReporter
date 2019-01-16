@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="login.html">User</a>
+                    <a href="signup.html">SignUp</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo1">
+                        <p>iReporter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class = "form-wrapper">
+                <form class="login-form">
+                    <span class="login-page">Admin Login</span>
+                    <div class="login-input">
+                        <input type="email" name="username" placeholder="Username/ Email" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="remember-me">
+                        <label id="remember">Remember me</label>
+                    </div>
+                    <div class="forget">
+                        <label id="forgot"><a href="#" style="text-decoration: none; color: darkcyan;">Forgot Password?</a></label>
+                    </div>
+                    <div class="login-button">
+                        <button class="login" onclick="window.location.href='admin.html'">Login</button>
+                    </div>
+                   
+                </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </footer>
+        </div>
+    </body>
+</html>
