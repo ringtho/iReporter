@@ -147,7 +147,7 @@ textarea{
         font-size: 15px;
     }
     
-    .left-form{
+    .left-form, .right-form, .other{
         width: 80%;
         margin: 0 auto;
         float: none;
@@ -192,7 +192,7 @@ textarea{
         font-size: 16px;
     }
     
-    .left-form{
+    .left-form,.right-form,.other{
         width: 70%;
         margin: 0 auto;
         float: none;
@@ -229,10 +229,15 @@ textarea{
         bottom: 0;
     }
     
-    .left-form{
+    .left-form,.right-form, .other{
         float: left;
         width: 30%;
     }
+    
+    .right-form{
+        width: 40%;
+    }
+    
 }
 
 @media only screen and (min-width: 1080px){
