@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/report.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="user_profile.html">Sringtho</a>
+                    <a href="login.html">LogOut</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <span>iReporter</span>
+                    </div>
+                    <div class="menu">
+                        <label id="label" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="report.html" style="color: red;">Report Incident</a>
+                            <a href="list.html">RedFlags</a>
+                            <a href="intervention_lists.html">Interventions</a>
+                            <a href="about.html">About Us</a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                 <div class="report-form">
+                        <div class="left-form">
+                            <form class="report">
+                                <p>AGENCY DETAILS</p>
+                                <select name="corruption-type">
+                                    <option value="select">--- Incident Option -- </option>
+                                    <option value="private">Red Flag</option>
+                                    <option value="public">Intervention</option>
+                                </select>
+                                 <select name="corruption-type">
+                                    <option value="select">--- Incident Type -- </option>
+                                    <option value="private">Famine</option>
+                                    <option value="public">Floods</option>
+                                    <option value="public">Diseases</option>
+                                    <option value="public">Roads</option>
+                                    <option value="public">Corruption</option>
+                                </select>
+                                <input type="text" id="agency" name="agency" placeholder="*AGENCY NAME">
+                                <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL">
+                                <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible."></textarea>
+                                
+                                                               
+                            </form>
+                        </div>
+                        <div class="right-form">
+                            <form class="report">
+                                <p>MAP</p>
+                                <div class="map" id="googleMap">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="other">
+                            <form class="report">
+                                <p>Location Coordinates</p>
+                                <div class="latlng">
+                                    <div id="late" >LATITUDE</div>
+                                    <div id="long">LONGITUDE</div>
+                                    <input type="file" id="Files" placeholder="Picture of Incident">
+                                    <button type="submit" id="submit">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="../script/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
+    
+    </body>
+</html>

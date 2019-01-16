@@ -80,16 +80,21 @@ html{
 
 
 .main{
-    height: 600px;
+    height: auto;
+    padding-bottom: 60px;
 
 }
 
 .footer{
     height: 60px;
+    width: 100%;
     background: darkcyan;
     color: white;
     line-height: 60px;
-
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+          
 }
 
 .footer a{

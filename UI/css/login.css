@@ -15,6 +15,20 @@
     
 }
 
+.new {
+    padding: 15px 0 0 0;
+}
+
+.new a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+.new a:hover{
+    color: turquoise;
+}
+
 .login-form span{
     font-family: arial, sans-serif;
 }
@@ -24,7 +38,7 @@
     height: 40px;
     margin-top: 20px;
     margin-bottom: 15px;
-    border: 2px solid black;
+    border: 2px solid darkcyan;
     border-radius: 3px;
     padding: 10px;
     font-size: 20px;
@@ -88,6 +102,27 @@
 
 #password {
     margin-top: -1px;
+}
+
+.logo1{
+    height: 70px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid darkcyan;
+    margin: 0 0 20px 0;
+    
+}
+
+.logo1 p{
+    font-size: 40px;
+    color: indianred;
+}
+
+.logo1 span{
+    line-height: 80px;
+    font-size: 40px;
+    color: indianred;
 }
 
 @media only screen and (max-width: 600px){

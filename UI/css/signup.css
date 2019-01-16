@@ -1,7 +1,8 @@
 .form-wrapper{
     height: 500px;
-    width: 25%;
+    width: 35%;
     margin: 10px auto;
+    
 }
 
 .signup{
@@ -11,6 +12,33 @@
     height: 100%;
     text-align: center;
   
+}
+
+.main{
+    height: auto;
+}
+
+
+
+.logo1{
+    height: 70px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid darkcyan;
+    margin: 0 0 20px 0;
+    
+}
+
+.logo1 p{
+    font-size: 40px;
+    color: indianred;
+}
+
+.logo1 span{
+    line-height: 80px;
+    font-size: 40px;
+    color: indianred;
 }
 
 #signup-heading{
@@ -27,7 +55,7 @@
     margin-top: 20px;
     height: 45px;
     width: 90%;
-    border: 2px solid black;
+    border: 2px solid darkcyan;
     border-radius: 3px;
     font-size: 18px;
     padding-left: 10px;
@@ -79,7 +107,7 @@
 @media only screen and (max-width: 600px){
     
 .form-wrapper{
-        width: 80%;
+        width: 90%;
     }
    
 }
@@ -87,7 +115,7 @@
 @media only screen and (max-width: 940px){
     
 .form-wrapper{
-        width: 50%;
+        width: 60%;
     }
     
     

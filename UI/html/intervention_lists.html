@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter | Interventions</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/list.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="user_profile.html">Sringtho</a>
+                    <a href="login.html">LogOut</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <p>iReporter</p>
+                    </div>
+                    <div class="menu">
+                        <label id="label" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="report.html">Report Incident</a>
+                            <a href="list.html">Red Flags</a>
+                            <a href="intervention_lists.html" style="color: red;">Interventions</a>
+                            <a href="about.html">About Us</a>
+                    
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h1>Interventions</h1>
+                <div class="stats">
+                    <div class="rej">
+                        <div class="in">
+                            <p id="blue">Under Investigation</p>
+                        </div>
+                        <div class="in2">
+                            <p>2 / 4</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="green">Resolved</p>
+                        </div>
+                        <div class="in2">
+                            <p>0 / 4</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="red">Rejected</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 4</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="gray">Drafts</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 4</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="wrap-grid">
+                    <div class="grid">
+                    <div class="image">
+                        <img src="../img/hungry.jpeg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                        <table>
+                            <tr>
+                                <th>Intervention Type</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Famine</td>
+                                <td>014E526N78</td>
+                                <td>N56S67SSW</td>
+                                <td id="invest">Under Investigation</td>
+                                <td>
+                                   <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid">
+                    <div class="image">
+                        <img src="../img/famine.webp" alt="corruption">
+                    </div>
+                    <div class="fields">
+                         <table>
+                            <tr>
+                                <th>Intervention Type</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Famine</td>
+                                <td>014E526N78</td>
+                                <td>N56S67SSW</td>
+                                <td id="draft">Draft (N/A)</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid">
+                    <div class="image">
+                        <img src="../img/crying.jpeg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                      <table>
+                            <tr>
+                                <th>Intervention Type</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Diseases</td>
+                                <td>014E526N78</td>
+                                <td>N56S67SSW</td>
+                                <td id="invest">Under Investigation</td>
+                                <td>
+                                  <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid">
+                    <div class="image">
+                        <img src="../img/floods.jpeg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                         <table>
+                            <tr>
+                                <th>Intervention Type</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Roads</td>
+                                <td>014E526N78</td>
+                                <td>N56S67SSW</td>
+                                <td id="reject">Rejected</td>
+                                <td>
+                                  <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </div>
+        </div>
+    </body>
+</html>
