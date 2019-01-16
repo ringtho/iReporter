@@ -63,6 +63,11 @@ th{
     font-weight: bold;
 }
 
+#draft{
+    color: grey;
+    font-weight: bold;
+}
+
 h1{
     text-align: center;
     font-size: 35px;
@@ -97,6 +102,11 @@ td{
 
 #red{
     color: indianred;
+    font-weight: bolder;
+}
+
+#gray{
+    color: grey;
     font-weight: bolder;
 }
 
@@ -145,7 +155,7 @@ button{
 
 .rej{
     height: 100%;
-    width: 30%;
+    width: 23%;
     float: left;
     margin-left: 20px;
 }
