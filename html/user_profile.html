@@ -4,6 +4,7 @@
         <title>iReporter | Profile</title>
         <link rel="stylesheet" href="../css/template.css">
         <link rel="stylesheet" href="../css/user_profile.css">
+        <link rel="stylesheet" href="../css/list.css">
      
       
         <meta charset="utf-8">
@@ -45,131 +46,33 @@
                               <p><button id="change" style="  border: none; outline: 0; display: inline-block; padding: 8px; color: white; background-color: darkcyan; text-align: center; cursor: pointer; width: 100%; font-size: 18px;" onclick="window.location.href='change.html'">Change Details</button></p>
                         </div>
                     </div >
-                    <div class="investigation">
-                        <h2>Interventions</h2>
-                        <table>
-                            <tr>
-                                <th id="green">Resolved</th>
-                                <th id="blue">Under Investigation</th>
-                                <th id="red">Rejected</th>
-                            </tr>
-                            <tr>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            
-                        </table>
-                        
-                        <h2>Red Flags</h2>
-                        <table>
-                            <tr>
-                                <th id="green">Resolved</th>
-                                <th id="blue">Under Investigation</th>
-                                <th id="red">Rejected</th>
-                            </tr>
-                            <tr>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>0</td>
-                            </tr>
-                            
-                        </table>
+                    <div class="stats">
+                        <div class="rej">
+                            <p id="heading">Incidents Stats</p>
+                        <div class="in">
+                            <p id="blue">Under Investigation</p>
+                        </div>
+                        <div class="in2">
+                            <p>7 / 12</p>
+                        </div>
                     </div>
-                </div>
-                <div class="user_lists">
-                    <div class="heading">
+                    <div class="rej">
+                        <div class="in">
+                            <p id="green" style="margin-top:90px ">Resolved</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 12</p>
+                        </div>
                     </div>
-                    
-                    <div class="grid">
-                    <div class="image">
-                        <img id="pic" src="../img/road.jpg" alt="corruption">
+                    <div class="rej">
+                        <div class="in">
+                            <p id="red" style="margin-top:90px; ">Rejected</p>
+                        </div>
+                        <div class="in2">
+                            <p>4 / 12</p>
+                        </div>
                     </div>
-                    <div class="fields">
-                        <table id="table">
-                            <tr>
-                                <th>Entry Type</th>
-                                <th>Agency Name</th>
-                                <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
-                                <th>Latitude</th>
-                                <th>Longitude</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Red Flag</td>
-                                <td>Ministry of Health</td>
-                                <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="invest">Under Investigation</td>
-                                
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                        <div class="grid">
-                    <div class="image">
-                        <img id="pic" src="../img/road.jpg" alt="corruption">
-                    </div>
-                    <div class="fields">
-                         <table id="table">
-                            <tr>
-                                <th>Entry Type</th>
-                                <th>Agency Name</th>
-                                <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
-                                <th>Latitude</th>
-                                <th>Longitude</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Red Flag</td>
-                                <td>Ministry of Health</td>
-                                <td>Moses Kawuma</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="reject">Rejected</td>
-                                
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                        <div class="grid">
-                    <div class="image">
-                        <img id="pic" src="../img/floods.jpeg" alt="corruption">
-                    </div>
-                    <div class="fields">
-                        <table id="table">
-                            <tr>
-                                <th>Entry Type</th>
-                                <th>Agency Name</th>
-                                <th>Name of Official</th>
-                                <th>Position Held</th>
-                                <th>Location</th>
-                                <th>Latitude</th>
-                                <th>Longitude</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: bold;">Intervention</td>
-                                <td>Ministry of Lands</td>
-                                <td>Bad Roads</td>
-                                <td>State Minister</td>
-                                <td>Kampala</td>
-                                <td>Latitude</td>
-                                <td>Longitude</td>
-                                <td id="resolve">Resolved</td>
-                                
-                            </tr>
-                        </table>
-                    </div>
+
                 </div>
                 </div>
             </div>
