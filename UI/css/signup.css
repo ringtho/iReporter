@@ -2,7 +2,7 @@
     height: 500px;
     width: 35%;
     margin: 10px auto;
-    overflow-y: auto;
+    
 }
 
 .signup{
@@ -12,6 +12,10 @@
     height: 100%;
     text-align: center;
   
+}
+
+.main{
+    height: auto;
 }
 
 
@@ -103,7 +107,7 @@
 @media only screen and (max-width: 600px){
     
 .form-wrapper{
-        width: 80%;
+        width: 90%;
     }
    
 }
@@ -111,7 +115,7 @@
 @media only screen and (max-width: 940px){
     
 .form-wrapper{
-        width: 50%;
+        width: 60%;
     }
     
     
