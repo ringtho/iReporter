@@ -2,6 +2,7 @@
     height: 500px;
     width: 35%;
     margin: 10px auto;
+    overflow-y: auto;
 }
 
 .signup{
@@ -12,6 +13,8 @@
     text-align: center;
   
 }
+
+
 
 .logo1{
     height: 70px;
