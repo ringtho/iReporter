@@ -140,7 +140,7 @@ button{
     border: none;
 }
 
-#btn3{
+#btn3, #btn3j{
     margin-bottom: 10px;
     background: #009900;
     color: white;
@@ -148,9 +148,14 @@ button{
     border-radius: 2px;
 }
 
-#btn3:hover{
+#btn3,#btn3j:hover{
     background: #00e600;
     border: none;
+}
+
+#btn3j{
+
+    
 }
 
 .rej{
