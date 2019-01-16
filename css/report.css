@@ -119,6 +119,17 @@ textarea{
     color: white;
 }
 
+#delete1{
+    width: 94%;
+    margin-left: 25px;
+    background-color: indianred;
+    height: 40px;
+    border: 1px solid indianred;
+    border-radius: 2px;
+    color: white;
+    margin-top: 20px;
+}
+
 
 #submit:hover{
     background: #32f2eb;
