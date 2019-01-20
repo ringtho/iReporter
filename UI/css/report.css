@@ -28,17 +28,32 @@
 
 }
 
+
+
 .other{
     height: 98%;
     width: 25%;
     float: left;
+    overflow-y: auto;
     
+}
+
+#vid{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#filespan{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .report{
     display: block;
     padding: 10px;
-  
+   
 }
 
 .report input{
@@ -100,7 +115,7 @@ textarea{
     margin-left: 25px;
     margin-top: 10px;
     height: 190px;
-    background: blue;
+
 }
 
 #submit{
@@ -161,6 +176,11 @@ textarea{
     
     .footer{
         bottom: 0;
+    }
+    
+    #vid{
+        width: 100%;
+        height: 100%;
     }
 }
 
