@@ -1,0 +1,190 @@
+.flags{
+    width: 100%;
+    height: 90%;
+    float: none;
+ 
+
+
+}
+
+.resolved{
+    width: 45%;
+    height: 100%;
+    float: left;
+    margin: 30px 0 0 0;
+    
+    
+}
+
+
+.investigation{
+    width: 45%;
+    height: 100%;
+    float: left;
+  
+}
+
+.rejected{
+    width: 35%;
+    height: 100%;
+    float: left;
+        
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button:hover{
+   opacity: 0.7;
+}
+
+
+
+h2{
+    text-align: center;
+    color: darkcyan;
+    font-size: 40px;
+    margin: 50px 0 30 0;
+}
+
+table{
+    width: 95%;
+    text-align: center;
+    font-size: 22px;
+}
+
+td{
+    padding: 20px 0 20px 0;
+}
+
+
+
+#change{
+    width: 80%;
+    height: 35px;
+    border: 0px solid darkcyan;
+    background: darkcyan;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 0 0 0;
+    float: center;
+}
+
+#change:hover{
+    background: #4286f4;
+}
+
+#red{
+    color: red;
+}
+
+#green{
+    color: limegreen;
+}
+
+#blue{
+    color: #4286f4;
+}
+
+#tables tr{
+    margin: 0 0 20px 0;
+}
+
+.main{
+    height: auto;
+    overflow-y: auto;
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+}
+
+.fields{
+    width: 70%;
+    float: left;
+}
+
+#table{
+    width: 96%;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.image{
+    width: 20%;
+    height: 90%;
+    float: left;
+    margin: 10px 0 0 10px;
+   
+}
+
+.grid{
+    width: 90%;
+    height: 25%;
+    margin: 10px auto;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+#invest{
+    color: blue;
+    font-weight: bold;
+}
+
+#resolve{
+    color: green;
+    font-weight: bold;
+}
+
+#reject{
+    color: red;
+    font-weight: bold;
+}
+
+#pic{
+    width: 98%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#table tr th{
+     color: darkcyan;
+}
+
+#table tr td{
+       padding: 0 15px 0 15px;
+}
+
+.user_lists{
+    height: 100%;
+    width: 100%;
+    float: none;
+}
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    margin-top: 30px;
+}
+
+

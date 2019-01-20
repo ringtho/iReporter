@@ -1,0 +1,210 @@
+.grid,.grid1,.grid2,.grid3,.grid4{
+    width: 90%;
+    height: 25%;
+    margin: 10px auto;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.image{
+    width: 20%;
+    height: 90%;
+    float: left;
+    margin: 10px 0 0 10px;
+   
+}
+
+img{
+    width: 98%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.fields{
+    width: 70%;
+    float: left;
+}
+
+table{
+    width: 96%;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+th{
+    color: darkcyan;
+}
+
+.main{
+    height: auto;
+}
+
+.footer{
+    bottom: 0px;
+    margin-top: 30px;
+    position: fixed;
+}
+
+#invest{
+    color: blue;
+    font-weight: bold;
+}
+
+#resolve{
+    color: green;
+    font-weight: bold;
+}
+
+#reject{
+    color: red;
+    font-weight: bold;
+}
+
+#draft{
+    color: grey;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: indianred;
+}
+
+td{
+    padding: 0 15px 0 15px;
+}
+
+.stats{
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.wrap-grid{
+    height: 100%;
+    margin-top: 50px;
+}
+
+#green{
+    color: green;
+    font-weight: bolder;
+}
+
+#blue{
+    color: darkcyan;
+    font-weight: bolder;
+    
+}
+
+#red{
+    color: indianred;
+    font-weight: bolder;
+}
+
+#gray{
+    color: grey;
+    font-weight: bolder;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+}
+
+#btn1{
+    margin-bottom: 10px;
+    background: #4da6ff;
+    color: white;
+    border: 1px solid #4da6ff;
+    border-radius: 2px;
+}
+
+#btn1:hover{
+    background: #6699cc;
+    border: none;
+}
+
+#btn2,#btn23, #btn24, #btn25{
+    background: indianred;
+    color: white;
+    border: 1px solid indianred;
+    border-radius: 2px;
+}
+
+#btn2:hover, #btn23:hover,#btn24:hover, #btn25:hover{
+    background: #ff6666;
+    border: none;
+}
+
+#btn3, #btn3j{
+    margin-bottom: 10px;
+    background: #009900;
+    color: white;
+    border: 1px solid #009900;
+    border-radius: 2px;
+}
+
+#btn3,#btn3j:hover{
+    background: #00e600;
+    border: none;
+}
+
+.rej{
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 20px;
+}
+
+.in{
+    width: 100%;
+    height: 50%;
+
+}
+
+.in2{
+    width: 100%;
+    height: 50%;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    background:#f5f5ef;
+}
+
+.in p{
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.in2 p{
+    font-size: 28px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .stats{
+        width: 90%;
+    }
+    
+    .in2{
+        width: 60%;
+        height: 30%;
+    }
+    .in{
+        width: 60%;
+    }
+    
+    .in2 p{
+        font-size: 16px;
+    }
+    
+    .in p{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+}

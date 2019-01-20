@@ -1,0 +1,274 @@
+.report-form{
+    width: 98%;
+    height: 90%;
+    padding: 10px;
+    overflow-y: 0;
+  
+}
+
+.left-form{
+    height: 98%;
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+#googleMap{
+    height: 450px;
+    width: 99%;
+    margin: 0 auto;
+
+}
+
+.right-form{
+    height: 98%;
+    width: 45%;
+    float: left;
+
+}
+
+
+
+.other{
+    height: 98%;
+    width: 25%;
+    float: left;
+    overflow-y: auto;
+    
+}
+
+#vid{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#filespan{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.report{
+    display: block;
+    padding: 10px;
+   
+}
+
+.report input{
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    border: 2px solid darkcyan;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+select{
+    width: 84%;
+    height: 50px;
+    margin-top: 10px ;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 2px solid darkcyan;
+    margin-left: 30px;
+}
+
+p{
+   
+    font-size: 22px;
+    color: darkcyan;
+    text-align: center;
+}
+
+textarea{
+    width: 81%;
+    height: 150px;
+    margin-top: 10px;
+    font-family: arial, sans-serif;
+    border: 2px solid darkcyan;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+#late, #long{
+    width: 90%;
+    border: 2px solid darkcyan;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    color:gray;
+
+}
+#late{
+    margin-bottom: 10px;
+}
+
+#pic{
+    width: 94%;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 190px;
+
+}
+
+#submit{
+    width: 83%;
+    margin: 30px;
+    background-color: darkcyan;
+}
+
+#delete{
+    width: 94%;
+    margin-left: 25px;
+    background-color: indianred;
+    height: 40px;
+    border: 1px solid indianred;
+    border-radius: 2px;
+    color: white;
+}
+
+#delete1{
+    width: 94%;
+    margin-left: 25px;
+    background-color: indianred;
+    height: 40px;
+    border: 1px solid indianred;
+    border-radius: 2px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+#submit:hover{
+    background: #32f2eb;
+}
+
+#status{
+    color: red;
+}
+
+@media only screen and (max-width: 600px){
+    select{
+        font-size: 15px;
+    }
+    .report input{
+        font-size: 15px;
+    }
+    
+    .left-form, .right-form, .other{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        
+    }
+    
+    .main{
+        height: auto;
+        
+    }
+    
+    .footer{
+        bottom: 0;
+    }
+    
+    #vid{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#submit{
+    margin:10px;
+    text-align: center;
+    width: 94%;
+    height: 40px;
+    margin-left: 25px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+#Files{
+    width: 89%;
+    margin-left: 25px;
+}
+
+
+
+@media only screen and (min-width: 600px){
+    select{
+        font-size: 16px;
+    }
+    
+    .report input{
+        font-size: 16px;
+    }
+    
+    .left-form,.right-form,.other{
+        width: 70%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .main{
+        height: auto;
+    }
+    
+    .footer{
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 940px){
+    select{
+        font-size: 14px;
+    
+    }
+    .report input{
+        font-size: 13px;
+    }
+    
+    text-area{
+        font-size: 16px;
+    }
+    
+    .main{
+        height: 600px;
+    }
+    
+    .footer{
+        float: none;
+        bottom: 0;
+    }
+    
+    .left-form,.right-form, .other{
+        float: left;
+        width: 30%;
+    }
+    
+    .right-form{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (min-width: 1080px){
+    select{
+        font-size: 18px;
+    }
+    
+    .report input{
+        font-size: 18px;
+    }
+    
+}
+
+

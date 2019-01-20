@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iReporter | Red Flags</title>
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/list.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="top-bar">
+                    <a href="user_profile.html">Sringtho</a>
+                    <a href="login.html">LogOut</a>
+                </div>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <p>iReporter</p>
+                    </div>
+                    <div class="menu">
+                        <label id="label" for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle"/>
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="report.html">Report Incident</a>
+                            <a href="list.html" style="color: red;">Red Flags</a>
+                            <a href="intervention_lists.html">Interventions</a>
+                            <a href="about.html">About Us</a>
+                   
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <h1>Red Flags</h1>
+                <div class="stats">
+                    <div class="rej">
+                        <div class="in">
+                            <p id="blue">Under Investigation</p>
+                        </div>
+                        <div class="in2">
+                            <p>2 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="green">Resolved</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="red">Rejected</p>
+                        </div>
+                        <div class="in2">
+                            <p>1 / 7</p>
+                        </div>
+                    </div>
+                    <div class="rej">
+                        <div class="in">
+                            <p id="gray">Drafts</p>
+                        </div>
+                        <div class="in2">
+                            <p>3 / 7</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="wrap-grid">
+                    <div class="grid1">
+                    <div class="image">
+                        <img src="../img/road.jpg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                        <table>
+                            <tr>
+                                <th>Agency</th>
+                                <th>Name of Official</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Ministry of Health</td>
+                                <td>Moses Kawuma</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="invest">Under Investigation</td>
+                                <td>
+                                    <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn2">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid2">
+                    <div class="image">
+                        <img src="../img/pothhole.png" alt="corruption">
+                    </div>
+                    <div class="fields">
+                        <table>
+                            <tr>
+                                <th>Agency</th>
+                                <th>Name of Official</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Ministry of Health</td>
+                                <td>Moses Kawuma</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="draft">Draft</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn23">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid3">
+                    <div class="image">
+                        <img src="../img/road.jpg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                        <table>
+                            <tr>
+                                <th>Agency</th>
+                                <th>Name of Official</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Ministry of Health</td>
+                                <td>Moses Kawuma</td>
+                                <td>0.32850</td>
+                                <td>32.59187</td>
+                                <td id="resolve">Resolved</td>
+                                <td>
+                                    <button id="btn3" onclick="window.location.href='view_report.html'">View</button>
+                                    <button id="btn24">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                    <div class="grid4">
+                    <div class="image">
+                        <img src="../img/road.jpg" alt="corruption">
+                    </div>
+                    <div class="fields">
+                        <table>
+                            <tr>
+                                <th>Agency</th>
+                                <th>Name of Official</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Ministry of Health</td>
+                                <td>Moses Kawuma</td>
+                                <td>0.32850</td>
+                                <td >32.59187</td>
+                                <td id="draft">Draft</td>
+                                <td>
+                                    <button id="btn1" onclick="window.location.href='edit_report.html'">Edit</button>
+                                    <button id="btn25">Delete</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer">
+                <a href="" style="text-align: right; text-decoration: none; color: white;"><span>Terms and Conditions</span></a>
+            </div>
+        </div>
+        <script src="../script/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+.admin-bars{
+    width: 98%;
+    height: 500px;
+    margin: 20px auto;
+
+}
+
+.main{
+    height: auto;
+}
+
+.footer{
+    bottom: 0;
+}
+
+.words{
+    height: 96%;
+    width: 98%;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+table, th, td{
+    border: 2px solid darkcyan;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 15px;
+}
+
+tr:nth-child(odd){
+    background-color: azure;
+}
+
+th{
+    background-color: #eee;
+}
+
+button{
+    margin: 5px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+#under{
+    background: #19bbe8;
+    color: white;
+    border: 0 solid #19bbe8;
+}
+
+#rejected{
+    background: indianred;
+    color: white;
+    border: 0 solid indianred;
+}
+
+#resolved{
+    background: green;
+    color: white;
+    border: 0 solid green;
+}
+
+#under:hover{
+    background: #77d5ef;
+}
+
+#rejected:hover{
+    background: #db1c45;
+}
+
+#resolved:hover{
+    background: #08db64;
+}
+
+@media only screen and (max-width: 1080px){
+    #none{
+        display: none;
+    }
+    
+    table{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 940px){
+    table{
+        width: 90%;
+        
+    }
+    #remove{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    table{
+        width: 90%;
+    }
+    
+    #last{
+        display: none;
+    }
+    
+}

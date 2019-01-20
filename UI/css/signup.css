@@ -1,0 +1,125 @@
+.form-wrapper{
+    height: 500px;
+    width: 35%;
+    margin: 10px auto;
+    
+}
+
+.signup{
+    display: block;
+    margin-top: 10px 0;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+  
+}
+
+.main{
+    height: auto;
+}
+
+
+
+.logo1{
+    height: 70px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid darkcyan;
+    margin: 0 0 20px 0;
+    
+}
+
+.logo1 p{
+    font-size: 40px;
+    color: indianred;
+}
+
+.logo1 span{
+    line-height: 80px;
+    font-size: 40px;
+    color: indianred;
+}
+
+#signup-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    color: darkcyan;
+    font-family: arial, sans-serif;
+}
+
+.signup-input input{
+    margin-top: 20px;
+    height: 45px;
+    width: 90%;
+    border: 2px solid darkcyan;
+    border-radius: 3px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.signup-input{
+    margin: 0 auto;
+}
+
+#password{
+    margin-bottom: 5px;
+}
+
+.span-words{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial, sans-serif;
+}
+
+.signup-button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#signup-btn{
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: white;
+    background: darkcyan;
+    padding: 10px;
+    border: 0px solid #827ffe;
+    border-radius: 2px;
+}
+
+#signup-btn:hover{
+    background: #18dbd4;
+    border: 0px solid #403866;
+
+}
+
+.already-member{
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    
+.form-wrapper{
+        width: 90%;
+    }
+   
+}
+
+@media only screen and (max-width: 940px){
+    
+.form-wrapper{
+        width: 60%;
+    }
+    
+    
+   
+}
+
+
