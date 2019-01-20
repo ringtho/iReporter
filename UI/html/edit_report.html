@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../css/report.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width-device, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -53,7 +54,7 @@
                                 <input type="text" id="agency" name="agency" placeholder="*AGENCY OF OFFICIAL" value="Ministry of Lands">
                                 <input type="text" id="name" name="name" placeholder="*FULL NAME OF OFFICIAL" value="Moses Kawuma">
                                 <textarea name="what-happened" type="text" placeholder="WHAT HAPPENED IN DETAIL. Please provide as much details as possible.">He transferred funds meant for fixing potholes on the Ntinda road and built himself a mansion</textarea>
-                                <input type="file" id="File" >
+                               
                                                                
                             </form>
                         </div>
@@ -70,9 +71,10 @@
                                 <div class="latlng">
                                     <div id="late" >0.32850</div>
                                     <div id="long">32.59187</div>
-                                    <div id="pic"><img src="../img/pothhole.png" style="height: 100%; width: 100%; border-radius: 3px;"></div>
+                                     <span id="filespan">Image file:</span><input type="file" id="Files" placeholder="Image of Incident">
+                                    <span id="filespan">Video file:</span><input type="file" id="Files" placeholder="Video of Incident">
                                     <button type="submit" id="submit">UPDATE</button>
-                                    <button type="submit" id="delete">DELETE</button>
+                                    <button type="submit" id="delete" class="delete" >DELETE</button>
                                 </div>
                             </form>
                         </div>
@@ -84,6 +86,6 @@
         </div>
         <script type="text/javascript" src="../script/map.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeJBQPPSsN61R1O3BBtw2mEMIdnnKuo5c&callback=myMap"></script>
-    
+        <script src="../script/main.js"></script>
     </body>
 </html>
