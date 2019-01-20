@@ -35,6 +35,13 @@
     
 }
 
+#filespan{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .report{
     display: block;
     padding: 10px;
